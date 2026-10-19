@@ -1,0 +1,54 @@
+# 运行时生成 / 个人数据（绝不入库）
+config.json
+maid_history*.json
+maid_memory*.json
+maid_data.json
+maid_alive.txt
+screen_now.png
+tts_cache/
+tts_cache.wav
+tts_cache.mp3
+
+# 日志
+*.log
+*.txt.old
+stderr.txt
+stdout.txt
+_boot_*.log
+maid_chat_err.txt
+
+# Python
+__pycache__/
+*.pyc
+
+# 大资源（官方渠道自取，见 README 安装节）
+gptsovits/
+vosk-model*/
+miniforge/
+py312/
+libs/
+learn/
+voice/
+frame_raw/
+gen/
+wallpaper/
+l2d/model/
+l2d/vendor/
+
+# 翻唱/歌库（自备 + 运行产物）
+song/library/
+song/RVC2023/
+song/DiffSinger/
+song/svs_dataset/
+song/weights/
+song/mashiro_model/
+song/output/
+song/uvr_out/
+song/work/
+song/*.wav
+
+# 推文流水线素材
+tuwen/input/
+tuwen/output/
+tuwen/projects/
+tuwen/xiaosi_video/

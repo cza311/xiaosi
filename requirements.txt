@@ -1,0 +1,14 @@
+vosk
+requests
+pillow
+edge-tts
+pywebview
+pythonnet
+pywin32
+yt-dlp
+mutagen
+lxml
+py7zr
+numpy
+scipy
+psutil

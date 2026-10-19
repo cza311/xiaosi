@@ -1,0 +1,6 @@
+{
+  "name": "小说推文视频流水线",
+  "steps": "把小说片段做成带真白配音+字幕+AI插画的竖屏推文视频。流程：1)主人给小说片段文本，存为 D:\\maid\\tuwen\\input\\<标题>.txt（UTF-8 纯文本，300~600字最佳，约1分钟成片）；2)执行 run_ps：& \"C:\\Users\\CK\\AppData\\Local\\Python\\pythoncore-3.14-64\\python.exe\" -u D:\\maid\\tuwen\\tuwen_pipeline.py <文本路径> <标题> （超时给600秒）；3)成功后输出在 D:\\maid\\tuwen\\output\\<标题>.mp4，用 run_ps 打开文件夹给主人看：explorer D:\\maid\\tuwen\\output；4)失败时读日志尾部找原因：TTS失败=GPT-SoVITS api_v2(9880)没开，需用启动女仆酱.bat 或手动拉起 api_v2；其他错误原样汇报。要点：流水线自动完成 LLM分段→CogView配图→真白声线中文配音→字幕烤入→ffmpeg合成(1080x1920)；变现提示：发布前主人需在番茄/七猫等推文平台注册拿到书单授权，视频里挂书名引导搜索，平台按拉新分成；只能用有授权或原创的文本，别拿正版书原文直接商用",
+  "tag": "变现",
+  "time": "2026-10-18"
+}
