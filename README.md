@@ -28,7 +28,7 @@
 ## 安装（三步）
 
 ```bat
-git clone https://github.com/chenzhangsheng01-spec/xiaosi.git D:\maid
+git clone https://github.com/cza311/xiaosi.git D:\maid
 cd /d D:\maid
 py install.py
 ```
